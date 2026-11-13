@@ -27,7 +27,7 @@ typedef struct {
 
 // Function declarations
 
-void container_init(Container *c);
+void container_init( Container *c);
 int set_int(Container *c, int value);
 int set_float(Container *c, float value);
 int set_char(Container *c, char value);
@@ -35,11 +35,11 @@ int set_string(Container *c, const char *value);
 int get_int(const Container *c, int *out_value);
 int get_float(const Container *c, float *out_value);
 int get_char(const Container *c, char *out_value);
-int get_string(const Container *c, const char **out_value);
+int get_string( const Container *c, const char **out_value);
 
-void container_clear(Container *c);
+void container_clear( Container *c);
 int container_copy(Container *destination, const Container *source);
-void container_print(const Container *c);
+void container_print( const Container *c);
 const char* container_type_name(DataType type);
 
 int main() {
