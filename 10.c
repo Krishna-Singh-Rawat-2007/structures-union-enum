@@ -72,8 +72,8 @@ int main() {
 
     for (int i = 0; i < 6; i++) {
 
-        printf("\nIndex: %d\n", i);
-        printf("Type: %s\n", container_type_name(containers[i].type));
+        printf("\n Index: %d \n", i);
+        printf(" Type: %s\n", container_type_name(containers[i].type));
         printf("Value: ");
 
         container_print(&containers[i]);
@@ -90,14 +90,14 @@ int main() {
 
         set_string(&containers[5], "Changed Data");
 
-        printf("After changing original: ");
+        printf("After changing original= ");
         container_print(&containers[5]);
 
-        printf("Copied value: ");
+        printf("Copied value= ");
         container_print(&copied);
     }
     else {
-        printf("Copy failed.\n");
+        printf("Copying has failed.\n");
     }
 
     // Demonstrating different type transitions
@@ -106,17 +106,17 @@ int main() {
 
     set_string(&transition, "Hello");
 
-    printf("String: ");
+    printf("String = ");
     container_print(&transition);
 
     set_int(&transition, 25);
 
-    printf("Integer: ");
+    printf("Integer= ");
     container_print(&transition);
 
     set_string(&transition, "New String");
 
-    printf("String: ");
+    printf("String= ");
     container_print(&transition);
 
     set_float(&transition, 3.14);
@@ -141,7 +141,7 @@ int main() {
     container_clear(&copied);
     container_clear(&transition);
 
-    printf("\nAll containers cleared successfully.\n");
+    printf("\n All containers has been cleared successfully.\n");
 
     return 0;
 }
